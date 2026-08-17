@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тесты — Mooni Admin</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-layout">
+
+  <aside class="admin-sidebar">
+    <a href="index.html" class="admin-logo"><img src="../assets/logo/logo-icon.svg" alt="">mooni admin</a>
+    <nav class="admin-nav">
+      <a href="index.html">📊 Дашборд</a>
+      <a href="upload-video.html">🎬 Видеоуроки</a>
+      <a href="tests.html" class="active">✅ Тесты</a>
+      <a href="support.html">💬 Поддержка</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="admin-user"><div class="av">A</div><div><b>Admin</b><br>admin@mooni.app</div></div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div><h1>Конструктор тестов</h1><p>Создайте вопросы с вариантами ответов для проверки урока</p></div>
+    </div>
+
+    <div class="panel">
+      <form id="testForm">
+        <div class="form-grid">
+          <div class="field">
+            <label>Название теста</label>
+            <input type="text" value="Тест к уроку «Циклы»">
+          </div>
+          <div class="field">
+            <label>Привязан к уроку</label>
+            <select>
+              <option>Первый код · Урок 5. Циклы</option>
+              <option>Первый код · Урок 6. Функции</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="questionsWrap">
+          <div class="question-card">
+            <span class="remove-q">Удалить ✕</span>
+            <div class="field">
+              <label>Вопрос 1</label>
+              <input type="text" value="Что делает цикл в программе?">
+            </div>
+            <div class="option-row"><input type="radio" name="correct-1" checked><input type="text" value="Повторяет действие несколько раз"></div>
+            <div class="option-row"><input type="radio" name="correct-1"><input type="text" value="Останавливает программу"></div>
+            <div class="option-row"><input type="radio" name="correct-1"><input type="text" value="Удаляет переменную"></div>
+          </div>
+
+          <div class="question-card">
+            <span class="remove-q">Удалить ✕</span>
+            <div class="field">
+              <label>Вопрос 2</label>
+              <input type="text" value="Сколько раз выполнится «повтори 5 раз: прыжок»?">
+            </div>
+            <div class="option-row"><input type="radio" name="correct-2"><input type="text" value="1 раз"></div>
+            <div class="option-row"><input type="radio" name="correct-2" checked><input type="text" value="5 раз"></div>
+            <div class="option-row"><input type="radio" name="correct-2"><input type="text" value="Бесконечно"></div>
+          </div>
+        </div>
+
+        <button type="button" id="addQuestion" class="btn btn--ghost" style="margin-bottom:20px;">+ Добавить вопрос</button>
+        <br>
+        <button type="submit" class="btn btn--primary">Сохранить тест</button>
+      </form>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

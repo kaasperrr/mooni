@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Видеоуроки — Mooni Admin</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-layout">
+
+  <aside class="admin-sidebar">
+    <a href="index.html" class="admin-logo"><img src="../assets/logo/logo-icon.svg" alt="">mooni admin</a>
+    <nav class="admin-nav">
+      <a href="index.html">📊 Дашборд</a>
+      <a href="upload-video.html" class="active">🎬 Видеоуроки</a>
+      <a href="tests.html">✅ Тесты</a>
+      <a href="support.html">💬 Поддержка</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="admin-user"><div class="av">A</div><div><b>Admin</b><br>admin@mooni.app</div></div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div><h1>Загрузка видеоурока</h1><p>Добавьте видео и привяжите его к курсу и уроку</p></div>
+    </div>
+
+    <div class="panel">
+      <h2>1. Видеофайл</h2>
+      <div class="dropzone" id="videoDropzone">
+        <div class="ico">🎬</div>
+        <p class="dz-text"><b>Перетащите видео сюда</b> или нажмите, чтобы выбрать файл</p>
+        <p style="font-size:12px; margin-top:6px;">MP4, WebM · рекомендуем до 1080p, до 1.5 ГБ</p>
+      </div>
+      <input type="file" id="videoFile" accept="video/*" style="display:none;">
+      <div class="progress-row" id="uploadProgress" style="display:none;">
+        <div class="progress-track"><span></span></div>
+        <span id="uploadLabel">0%</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>2. Информация об уроке</h2>
+      <form onsubmit="event.preventDefault(); alert('Урок сохранён (демо). Подключите backend для реального сохранения.');">
+        <div class="form-grid">
+          <div class="field">
+            <label>Курс</label>
+            <select>
+              <option>Первый код (6–8 лет)</option>
+              <option>Создай свою игру (9–11 лет)</option>
+              <option>Python для начинающих (12–14 лет)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Номер урока</label>
+            <input type="number" min="1" value="6">
+          </div>
+        </div>
+        <div class="field">
+          <label>Название урока</label>
+          <input type="text" placeholder="Например: Функции — собираем код в блоки">
+        </div>
+        <div class="field">
+          <label>Описание для ученика</label>
+          <textarea placeholder="Коротко о том, что ребёнок узнает в этом уроке..."></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="field">
+            <label>Статус</label>
+            <select>
+              <option>Черновик</option>
+              <option>Опубликован</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Прикрепить тест</label>
+            <select>
+              <option>Без теста</option>
+              <option>Тест «Циклы» (2 вопроса)</option>
+              <option value="new">+ Создать новый тест</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary">Сохранить урок</button>
+      </form>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

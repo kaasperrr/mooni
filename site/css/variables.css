@@ -1,0 +1,42 @@
+/* ============================================
+   MOONI — палитра, взятая с ваших референсов
+   (тёплые красно-оранжевые тона + тёмный шоколад + крем)
+   ============================================ */
+:root {
+  /* из первого референса */
+  --red:        #CC0A0D;   /* основной акцент, кнопки */
+  --dark:       #21130F;   /* текст, шапка, фон hero */
+  --orange:     #F87F23;   /* вторичный акцент, CTA-хайлайт */
+  --cream:      #F0DFCB;   /* светлый фон карточек/секций */
+  --gray:       #9E9A9A;   /* второстепенный текст */
+
+  /* из второго референса */
+  --wine:       #400101;   /* глубокие тени, градиенты */
+  --paprika:    #730C02;   /* hover для красного */
+  --fire:       #BF3604;   /* градиентный переход красный→оранжевый */
+  --flame:      #F2913D;   /* мягкий оранжевый для иконок/бэйджей */
+
+  /* производные */
+  --white:      #FFFEFB;
+  --ink:        var(--dark);
+
+  --grad-fire: linear-gradient(135deg, var(--red) 0%, var(--fire) 50%, var(--orange) 100%);
+  --grad-night: linear-gradient(180deg, var(--dark) 0%, var(--wine) 100%);
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 10px 30px rgba(33, 19, 15, 0.12);
+  --shadow-pop:  0 14px 34px rgba(204, 10, 13, 0.28);
+
+  --font-display: 'Baloo 2', 'Comic Neue', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
+
+  --container: 1180px;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* сайт для детей — принудительно светлая тема, не наследуем системную тёмную */
+}

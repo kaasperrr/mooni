@@ -1,0 +1,20 @@
+# Деплой статического сайта Mooni на GitLab Pages.
+# После деплоя:
+#   https://<namespace>.gitlab.io/<repo>/       -> редирект на сайт
+#   https://<namespace>.gitlab.io/<repo>/site/  -> публичный сайт
+#   https://<namespace>.gitlab.io/<repo>/admin/ -> админ-панель
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - mkdir -p public
+    - cp -r site public/site
+    - cp -r admin public/admin
+    - cp -r assets public/assets
+    - cp redirect-index.html public/index.html
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'

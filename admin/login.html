@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вход в панель управления — Mooni Admin</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site/css/style.css">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <img class="mascot" src="../assets/mascot/mascot-2-coder.svg" alt="Муни">
+    <h1>Панель управления</h1>
+    <p class="sub">Вход для администраторов и кураторов Mooni</p>
+
+    <form onsubmit="event.preventDefault(); window.location.href='index.html';">
+      <div class="field">
+        <label for="email">Логин</label>
+        <input type="email" id="email" placeholder="admin@mooni.app" required>
+      </div>
+      <div class="field">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn--primary">Войти в панель</button>
+    </form>
+    <p class="auth-switch"><a href="../site/index.html">← На сайт</a></p>
+  </div>
+</div>
+</body>
+</html>

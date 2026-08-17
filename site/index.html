@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mooni — программирование для детей</title>
+<meta name="description" content="Mooni — онлайн-курс программирования для детей: видеоуроки, тесты и поддержка на каждом шаге.">
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo"><img src="../assets/logo/logo-icon.svg" alt="Mooni">mooni</a>
+    <nav class="nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="courses.html">Курсы</a>
+      <a href="#roadmap">Прогресс</a>
+      <a href="#parents">Родителям</a>
+    </nav>
+    <div class="header__actions">
+      <a href="login.html" class="btn btn--ghost btn--sm">Войти</a>
+      <a href="courses.html" class="btn btn--primary btn--sm">Начать учиться</a>
+      <button class="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <span class="close-mobile">×</span>
+  <a href="index.html">Главная</a>
+  <a href="courses.html">Курсы</a>
+  <a href="#roadmap">Прогресс</a>
+  <a href="#parents">Родителям</a>
+  <a href="login.html">Войти</a>
+</div>
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div>
+      <span class="eyebrow">🌙 Курс №1 для юных программистов</span>
+      <h1>Учим детей <span>программировать</span> играя, шаг за шагом</h1>
+      <p class="lead">Видеоуроки, весёлые задания и маскот Муни, который празднует каждую победу вместе с вашим ребёнком.</p>
+      <div class="hero__cta">
+        <a href="courses.html" class="btn btn--primary">Выбрать курс</a>
+        <a href="#roadmap" class="btn btn--ghost">Как проходит обучение</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><b>4 800+</b><span>детей учатся</span></div>
+        <div class="stat"><b>62</b><span>интерактивных урока</span></div>
+        <div class="stat"><b>4.9★</b><span>оценка родителей</span></div>
+      </div>
+    </div>
+    <div class="hero__art">
+      <img src="../assets/mascot/mascot-1-classic.svg" alt="Маскот Муни">
+    </div>
+  </div>
+</section>
+
+<section class="phases" id="roadmap">
+  <div class="container">
+    <h2 class="section-title">Путь ученика — от новичка до создателя игр</h2>
+    <p class="section-sub">Каждая фаза луны — это новый уровень курса. Проходите уроки и открывайте следующую фазу!</p>
+    <div class="phase-track">
+      <div class="phase-card"><div class="moon">1</div><h3>Первые шаги</h3><p>Знакомство с логикой и блоками</p></div>
+      <div class="phase-card"><div class="moon">2</div><h3>Алгоритмы</h3><p>Учимся думать как программист</p></div>
+      <div class="phase-card"><div class="moon">3</div><h3>Игры</h3><p>Создаём свою первую игру</p><span class="badge">Хит</span></div>
+      <div class="phase-card locked"><div class="moon">4</div><h3>Роботы</h3><p>Программируем движение и датчики</p></div>
+      <div class="phase-card locked"><div class="moon">5</div><h3>Проект</h3><p>Финальный проект и диплом</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="courses">
+  <div class="container">
+    <h2 class="section-title">Популярные курсы</h2>
+    <p class="section-sub">Подберите курс по возрасту и интересам ребёнка.</p>
+    <div class="grid-cards">
+      <div class="card">
+        <div class="card__cover"><img src="../assets/mascot/mascot-2-coder.svg" alt=""></div>
+        <div class="card__body">
+          <span class="card__tag">6–8 лет</span>
+          <h3>Первый код</h3>
+          <p>Блочное программирование и первые алгоритмы в игровой форме.</p>
+          <div class="card__meta"><span>12 уроков</span><a href="lesson.html" class="btn btn--ghost btn--sm">Открыть</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__cover"><img src="../assets/mascot/mascot-3-graduate.svg" alt=""></div>
+        <div class="card__body">
+          <span class="card__tag">9–11 лет</span>
+          <h3>Создай свою игру</h3>
+          <p>От идеи до готовой игры на Scratch с собственными персонажами.</p>
+          <div class="card__meta"><span>18 уроков</span><a href="lesson.html" class="btn btn--ghost btn--sm">Открыть</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__cover"><img src="../assets/mascot/mascot-1-classic.svg" alt=""></div>
+        <div class="card__body">
+          <span class="card__tag">12–14 лет</span>
+          <h3>Python для начинающих</h3>
+          <p>Настоящий язык программирования — просто и с примерами из жизни.</p>
+          <div class="card__meta"><span>24 урока</span><a href="lesson.html" class="btn btn--ghost btn--sm">Открыть</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">Почему Mooni</h2>
+    <div class="grid-features">
+      <div class="feature"><div class="ico">🎬</div><h4>Видеоуроки</h4><p>Короткие и понятные, с паузами на практику</p></div>
+      <div class="feature"><div class="ico">✅</div><h4>Тесты после урока</h4><p>Проверяем понимание в игровой форме</p></div>
+      <div class="feature"><div class="ico">🏆</div><h4>Награды</h4><p>Открывайте фазы луны и получайте дипломы</p></div>
+      <div class="feature"><div class="ico">💬</div><h4>Поддержка 24/7</h4><p>Чат с куратором прямо на сайте</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="parents" id="parents">
+  <div class="container parents__inner">
+    <div>
+      <h2>Для родителей: полный контроль над обучением</h2>
+      <p>Личный кабинет показывает прогресс ребёнка, пройденные тесты и время, проведённое на уроках.</p>
+      <a href="login.html" class="btn btn--primary">Создать аккаунт</a>
+    </div>
+    <ul class="check-list">
+      <li><b>✓</b> Безопасная среда без рекламы и посторонних ссылок</li>
+      <li><b>✓</b> Отчёт о прогрессе каждую неделю на почту</li>
+      <li><b>✓</b> Возможность приостановить или сменить курс</li>
+      <li><b>✓</b> Прямая связь с куратором в чате поддержки</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="logo"><img src="../assets/logo/logo-icon.svg" alt="Mooni">mooni</a>
+        <p style="margin-top:12px; max-width:280px; font-size:14px;">Онлайн-школа программирования для детей 6–14 лет.</p>
+      </div>
+      <div><h5>Обучение</h5>
+        <a href="courses.html">Курсы</a>
+        <a href="#roadmap">Прогресс</a>
+        <a href="lesson.html">Пример урока</a>
+      </div>
+      <div><h5>Компания</h5>
+        <a href="#parents">Родителям</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </div>
+      <div><h5>Аккаунт</h5>
+        <a href="login.html">Войти</a>
+        <a href="login.html">Регистрация</a>
+        <a href="../admin/index.html">Админ-панель</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mooni. Все права защищены.</span>
+      <span>Сделано с 🌙 для маленьких программистов</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/support-chat.js"></script>
+</body>
+</html>

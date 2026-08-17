@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дашборд — Mooni Admin</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-layout">
+
+  <aside class="admin-sidebar">
+    <a href="index.html" class="admin-logo"><img src="../assets/logo/logo-icon.svg" alt="">mooni admin</a>
+    <nav class="admin-nav">
+      <a href="index.html" class="active">📊 Дашборд</a>
+      <a href="upload-video.html">🎬 Видеоуроки</a>
+      <a href="tests.html">✅ Тесты</a>
+      <a href="support.html">💬 Поддержка</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="admin-user"><div class="av">A</div><div><b>Admin</b><br>admin@mooni.app</div></div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h1>Добро пожаловать 🌙</h1>
+        <p>Общая статистика платформы Mooni</p>
+      </div>
+      <a href="upload-video.html" class="btn btn--primary">+ Загрузить урок</a>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="n">4 812</div><div class="l">Учеников</div></div>
+      <div class="stat-card"><div class="n">62</div><div class="l">Видеоуроков</div></div>
+      <div class="stat-card"><div class="n">48</div><div class="l">Тестов</div></div>
+      <div class="stat-card"><div class="n">7</div><div class="l">Новых обращений</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Последние загруженные уроки</h2>
+      <table>
+        <thead><tr><th>Урок</th><th>Курс</th><th>Длительность</th><th>Статус</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>5. Циклы</td><td>Первый код</td><td>7:24</td><td><span class="tag ok">Опубликован</span></td><td><a href="upload-video.html" class="btn btn--ghost" style="padding:6px 14px;">Открыть</a></td></tr>
+          <tr><td>6. Функции</td><td>Первый код</td><td>—</td><td><span class="tag pending">Черновик</span></td><td><a href="upload-video.html" class="btn btn--ghost" style="padding:6px 14px;">Открыть</a></td></tr>
+          <tr><td>1. Идея игры</td><td>Создай свою игру</td><td>9:10</td><td><span class="tag ok">Опубликован</span></td><td><a href="upload-video.html" class="btn btn--ghost" style="padding:6px 14px;">Открыть</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Новые обращения в поддержку</h2>
+      <table>
+        <thead><tr><th>От кого</th><th>Тема</th><th>Время</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Родитель Анны, 7 лет</td><td>Не открывается видео урока 5</td><td>12 мин назад</td><td><a href="support.html" class="btn btn--ghost" style="padding:6px 14px;">Ответить</a></td></tr>
+          <tr><td>Родитель Марка, 10 лет</td><td>Как сдать тест?</td><td>1 ч назад</td><td><a href="support.html" class="btn btn--ghost" style="padding:6px 14px;">Ответить</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+</body>
+</html>

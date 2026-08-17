@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поддержка — Mooni Admin</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-layout">
+
+  <aside class="admin-sidebar">
+    <a href="index.html" class="admin-logo"><img src="../assets/logo/logo-icon.svg" alt="">mooni admin</a>
+    <nav class="admin-nav">
+      <a href="index.html">📊 Дашборд</a>
+      <a href="upload-video.html">🎬 Видеоуроки</a>
+      <a href="tests.html">✅ Тесты</a>
+      <a href="support.html" class="active">💬 Поддержка</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="admin-user"><div class="av">A</div><div><b>Admin</b><br>admin@mooni.app</div></div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div><h1>Обращения в поддержку</h1><p>Отвечайте родителям и ученикам прямо здесь</p></div>
+    </div>
+
+    <div class="inbox">
+      <div class="inbox-list" id="inboxList">
+        <div class="inbox-item active"><b>Родитель Анны, 7 лет</b><span>Не открывается видео урока 5 · 12 мин</span></div>
+        <div class="inbox-item"><b>Родитель Марка, 10 лет</b><span>Как сдать тест? · 1 ч</span></div>
+        <div class="inbox-item"><b>Родитель Ивана, 9 лет</b><span>Забыл пароль · 3 ч</span></div>
+        <div class="inbox-item"><b>Родитель Софии, 12 лет</b><span>Вопрос по оплате · вчера</span></div>
+      </div>
+      <div class="inbox-thread">
+        <div class="msgs" id="threadMsgs">
+          <div class="msg in">Здравствуйте! У ребёнка не открывается видео в уроке 5, крутится загрузка.</div>
+          <div class="msg out">Здравствуйте! Подскажите, пожалуйста, с какого устройства и браузера заходите?</div>
+          <div class="msg in">С планшета, через Safari.</div>
+        </div>
+        <div class="reply-row">
+          <input type="text" id="replyInput" placeholder="Напишите ответ...">
+          <button class="btn btn--primary" id="replySend">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

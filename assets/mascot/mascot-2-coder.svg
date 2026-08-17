@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="body2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2913D"/>
+      <stop offset="60%" stop-color="#CC0A0D"/>
+      <stop offset="100%" stop-color="#730C02"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="222" rx="56" ry="10" fill="#21130F" opacity="0.12"/>
+  <!-- тело -->
+  <path d="M122 22
+           C174 22 206 64 206 120
+           C206 178 162 222 110 222
+           C154 206 173 168 173 120
+           C173 70 154 34 110 20
+           C114 21 118 21 122 22 Z"
+        fill="url(#body2)"/>
+  <!-- лицо -->
+  <circle cx="120" cy="108" r="5.5" fill="#21130F"/>
+  <circle cx="152" cy="102" r="5.5" fill="#21130F"/>
+  <path d="M114 132 Q135 142 158 128" stroke="#21130F" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- очки -->
+  <circle cx="120" cy="108" r="14" fill="none" stroke="#21130F" stroke-width="3.5"/>
+  <circle cx="152" cy="102" r="14" fill="none" stroke="#21130F" stroke-width="3.5"/>
+  <line x1="134" y1="105" x2="138" y2="104" stroke="#21130F" stroke-width="3.5"/>
+  <!-- ноутбук -->
+  <g transform="translate(70,150)">
+    <rect x="0" y="0" width="70" height="42" rx="6" fill="#F0DFCB"/>
+    <rect x="6" y="6" width="58" height="30" rx="3" fill="#21130F"/>
+    <text x="35" y="26" font-family="monospace" font-size="12" fill="#F87F23" text-anchor="middle">&lt;/&gt;</text>
+    <rect x="-4" y="42" width="78" height="8" rx="4" fill="#9E9A9A"/>
+  </g>
+  <!-- звёзды -->
+  <g fill="#F0DFCB">
+    <path d="M200 56 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5-6 -6-2.5 6-2.5Z"/>
+    <path d="M36 130 l2 5 5 2 -5 2 -2 5 -2-5 -5-2 5-2Z"/>
+  </g>
+</svg>

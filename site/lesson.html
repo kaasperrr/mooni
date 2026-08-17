@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Урок 5 · Циклы — Mooni</title>
+<link rel="icon" href="../assets/logo/logo-icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo"><img src="../assets/logo/logo-icon.svg" alt="Mooni">mooni</a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="courses.html">Курсы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="courses.html" class="btn btn--ghost btn--sm">← К курсу</a>
+      <button class="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <span class="close-mobile">×</span>
+  <a href="index.html">Главная</a>
+  <a href="courses.html">Курсы</a>
+</div>
+
+<div class="lesson-layout">
+  <aside class="lesson-sidebar">
+    <h4>Первый код</h4>
+    <div class="lesson-item done"><span class="dot">✓</span> 1. Знакомство</div>
+    <div class="lesson-item done"><span class="dot">✓</span> 2. Переменные</div>
+    <div class="lesson-item done"><span class="dot">✓</span> 3. Условия</div>
+    <div class="lesson-item done"><span class="dot">✓</span> 4. Мини-игра</div>
+    <div class="lesson-item active"><span class="dot">5</span> 5. Циклы</div>
+    <div class="lesson-item locked"><span class="dot">6</span> 6. Функции</div>
+    <div class="lesson-item locked"><span class="dot">7</span> 7. Списки</div>
+    <div class="lesson-item locked"><span class="dot">8</span> 8. Финальный проект</div>
+  </aside>
+
+  <main class="lesson-main">
+    <div class="video-frame">
+      <video controls poster="" preload="none">
+        <source src="" type="video/mp4">
+      </video>
+      <div class="play-btn" style="position:absolute;">▶</div>
+    </div>
+    <h1>Урок 5. Циклы: повторяем действия без магии</h1>
+    <p class="desc">Муни покажет, как заставить персонажа прыгать десять раз, написав всего одну строчку кода. Посмотрите видео и ответьте на вопросы ниже.</p>
+
+    <div class="quiz-box">
+      <h3>🧠 Проверь себя</h3>
+
+      <div class="quiz-q">
+        <p class="q-title">1. Что делает цикл в программе?</p>
+        <label class="quiz-option" data-correct="true"><input type="radio" name="q1"> Повторяет действие несколько раз</label>
+        <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> Останавливает программу</label>
+        <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> Удаляет переменную</label>
+      </div>
+
+      <div class="quiz-q">
+        <p class="q-title">2. Сколько раз выполнится «повтори 5 раз: прыжок»?</p>
+        <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> 1 раз</label>
+        <label class="quiz-option" data-correct="true"><input type="radio" name="q2"> 5 раз</label>
+        <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Бесконечно</label>
+      </div>
+
+      <a href="courses.html" class="btn btn--primary" style="margin-top:10px;">Урок пройден, дальше →</a>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/support-chat.js"></script>
+</body>
+</html>
